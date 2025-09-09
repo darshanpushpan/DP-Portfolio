@@ -36,8 +36,9 @@ import {
 } from '../assets'
 
 
-// Import Tekisky separately
+// Import Tekisky and Trent separately
 import tekisky from "../assets/company/tekisky.png";
+import trent from "../assets/company/trent.png";
 
 
 export const navLinks = [
@@ -190,7 +191,7 @@ const educations = [
   {
     title: "Bachelor of Science, Specialist in Computer Science",
     company_name: "Trent University",
-    icon: bellmedia,
+    icon: trent,
     iconBg: "#383E56",
     date: "May 2022 – April 2025",
     points: [
