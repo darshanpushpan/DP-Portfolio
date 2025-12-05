@@ -31,10 +31,25 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("Missing EmailJS env vars:", {
+        serviceIdPresent: Boolean(serviceId),
+        templateIdPresent: Boolean(templateId),
+        publicKeyPresent: Boolean(publicKey),
+      });
+      setLoading(false);
+      alert("Email service is not configured. Please try again later.");
+      return;
+    }
+
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: "Darshan",
@@ -42,7 +57,7 @@ const Contact = () => {
           to_email: "darsanpushpan@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        publicKey
       )
       .then(
         () => {

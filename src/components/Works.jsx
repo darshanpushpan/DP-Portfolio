@@ -18,6 +18,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
   const cardRef = useRef(null);
 
@@ -45,7 +46,7 @@ const ProjectCard = ({
     );
   }, []);
 
-  const showPreview = false;
+  const showPreview = true;
 
   return (
     <div ref={cardRef}>
@@ -62,14 +63,31 @@ const ProjectCard = ({
             <img
               src={image}
               alt="project_image"
-              className="w-full h-full object-cover object-left rounded-2xl"
+              className="w-full h-full object-contain bg-gray-900 rounded-2xl"
             />
 
-            {source_code_link && (
-              <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
+              {live_demo_link && (
+                <div
+                  onClick={() => window.open(live_demo_link, "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                  title="Live Demo"
+                >
+                  <svg
+                    className="w-1/2 h-1/2 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002 2h6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
+                  </svg>
+                </div>
+              )}
+              {source_code_link && (
                 <div
                   onClick={() => window.open(source_code_link, "_blank")}
                   className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                  title="Source Code"
                 >
                   <img
                     src={github}
@@ -77,8 +95,8 @@ const ProjectCard = ({
                     className="w-1/2 h-1/2 object-contain"
                   />
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         )}
 
@@ -135,7 +153,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+        These projects highlight my ability to solve complex problems, work across diverse technologies, and manage development workflows effectively. Each example reflects real-world scenarios where I applied my technical expertise to deliver meaningful results.
         </p>
       </div>
 

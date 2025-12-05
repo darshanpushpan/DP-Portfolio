@@ -77,7 +77,6 @@ I'm a Cybersecurity Specialist with hands-on experience in IT operations and sec
 
 I work with tools like Nessus, SentinelOne, Burp Suite, and Wireshark, and leverage programming and scripting skills in Python, C++, Java, and Bash to automate workflows and improve security processes.
 
-Passionate about protecting digital environments and turning data into actionable insights, I excel at collaborating with cross-functional teams and communicating complex technical findings clearly to stakeholders.
       </p>
 
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10">

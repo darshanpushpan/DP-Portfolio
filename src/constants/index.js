@@ -13,6 +13,8 @@ import {
   gearXpert,
   project2,
   project3,
+  project4,
+  project5,
   mysql,
   express,
   aws,
@@ -241,7 +243,8 @@ const projects = [
       { name: "python", color: "white-text-gradient" },
     ],
     image: project2,
-    source_code_link: "",
+    source_code_link: "https://github.com/darshanpushpan/ats-resume-analyzer",
+    live_demo_link: "https://darshanpushpan.github.io/ats-resume-analyzer/",
   },
   {
     name: "Automated Vulnerability Scanner",
@@ -272,6 +275,50 @@ const projects = [
     image: gearXpert,
     source_code_link: "",
   },
+  {
+    name: "AI-Powered Threat Detection Dashboard",
+    description:
+      "A full-stack web application that uses machine learning to detect anomalies in network traffic logs. Users can upload log files in CSV or JSON format and receive an instant analysis, complete with an interactive chart, a detailed results table, and AI-generated explanations for why a particular entry is flagged as anomalous. The frontend is a modern, responsive single-page application, and the backend is a robust Flask API.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "flask", color: "white-text-gradient" },
+      { name: "pandas", color: "pink-text-gradient" },
+      { name: "scikit-learn", color: "green-text-gradient" },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "javascript", color: "white-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "chart.js", color: "green-text-gradient" },
+      { name: "render", color: "blue-text-gradient" },
+      { name: "gunicorn", color: "white-text-gradient" },
+    ],
+    image: project4,
+    source_code_link: "https://github.com/darshanpushpan/threat-detection-dashboard",
+  },
+  {
+    name: "Career Copilot",
+    description:
+      "Career Copilot is an AI-powered web application designed to help job seekers optimize their resumes and create tailored cover letters for specific job applications. The application provides intelligent analysis of job descriptions and resumes, offering personalized suggestions for improvement and generating professional cover letters.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "flask", color: "white-text-gradient" },
+      { name: "perplexity-api", color: "pink-text-gradient" },
+      { name: "sonar", color: "green-text-gradient" },
+      { name: "javascript", color: "blue-text-gradient" },
+      { name: "tailwind", color: "white-text-gradient" },
+      { name: "html5", color: "pink-text-gradient" },
+      { name: "pypdf2", color: "green-text-gradient" },
+      { name: "python-docx", color: "blue-text-gradient" },
+      { name: "git", color: "white-text-gradient" },
+      { name: "railway", color: "pink-text-gradient" },
+      { name: "rest-api", color: "green-text-gradient" },
+      { name: "jinja2", color: "blue-text-gradient" },
+      { name: "python-dotenv", color: "white-text-gradient" },
+      { name: "json", color: "pink-text-gradient" },
+    ],
+    image: project5,
+    source_code_link: "https://github.com/darshanpushpan/career_copilot",
+    live_demo_link: "https://careercopilot.up.railway.app/",
+  }
 ];
 
 export { services, technologies, experiences, educations, testimonials, projects };
