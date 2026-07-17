@@ -67,19 +67,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Security Analyst",
+    title: "Application Support Analyst",
     icon: web,
   },
   {
-    title: "Full-Stack Developer",
+    title: "Full-Stack Software Developer",
     icon: mobile,
   },
   {
-    title: "Security Software Developer",
+    title: "IT Business Analyst",
     icon: backend,
   },
   {
-    title: "IT Support Specialist",
+    title: "IT Security Specialist",
     icon: creator,
   },
 ];
@@ -162,6 +162,28 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Customer Service Agent",
+    company_name: "Arise (Reliance Home Comfort) · Remote",
+    icon: creator,
+    iconBg: "#383E56",
+    date: "June 2026 – Present",
+    points: [
+      "Resolve customer inquiries, document interactions, and support issue resolution using CRM tools.",
+    ],
+  },
+  {
+    title: "IT Support Technician (Part-Time)",
+    company_name: "Speedwings Services · Remote",
+    icon: web,
+    iconBg: "#383E56",
+    date: "June 2025 – Present",
+    points: [
+      "Troubleshoot Windows, network, software, and day-to-day technical issues for internal users.",
+      "Manage account access, assist with installations, and support system maintenance.",
+      "Configure and troubleshoot multiple POS hardware and software for business operations.",
+    ],
+  },
+  {
     title: "Cyber Security Specialist Intern",
     company_name: "Bell Media",
     icon: bellmedia,
@@ -187,6 +209,7 @@ const experiences = [
       "Documented technical workflows, contributing to a centralized knowledgebase for security operations.",
     ],
   },
+
 ];
 
 const educations = [
