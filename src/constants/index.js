@@ -15,6 +15,7 @@ import {
   project3,
   project4,
   project5,
+  supportOpsInsight,
   mysql,
   express,
   aws,
@@ -253,6 +254,22 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "SupportOps Insight",
+    description:
+      "A production support dashboard built with Flask that parses application logs in four formats, automatically groups repeated errors, scores severity, and generates print ready HTML incident reports in a few clicks. Includes a simulated ticket queue with SLA tracking and triage, plus an operations dashboard summarizing authentication and application health signals.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "flask", color: "white-text-gradient" },
+      { name: "jinja2", color: "pink-text-gradient" },
+      { name: "pandas", color: "green-text-gradient" },
+      { name: "javascript", color: "blue-text-gradient" },
+      { name: "html5", color: "white-text-gradient" },
+      { name: "css3", color: "pink-text-gradient" },
+    ],
+    image: supportOpsInsight,
+    source_code_link: "https://github.com/darshanpushpan/SupportOps-Insight-dashboard",
+  },
   {
     name: "ATS Software Simulator",
     description:
