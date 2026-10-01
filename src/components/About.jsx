@@ -73,9 +73,9 @@ const About = () => {
 
       <p ref={paragraphRef} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
         
-I'm a Cybersecurity Specialist with hands-on experience in IT operations and security, focusing on vulnerability management, incident response, and cloud security.
-
-I work with tools like Nessus, SentinelOne, Burp Suite, and Wireshark, and leverage programming and scripting skills in Python, C++, Java, and Bash to automate workflows and improve security processes.
+      I’m an early-career Technical Application Support Analyst with a cybersecurity background, specializing in vulnerability management, incident analysis, log review, and security automation. 
+      I’ve gained hands-on experience at Bell Media troubleshooting applications, networks, and access issues, while supporting internal teams on risk assessments and remediation. 
+      Proficient in tools like Nessus, Burp Suite, and Wireshark, I leverage programming skills in Python, Java, JavaScript, and Bash to automate workflows, enhance efficiency, and deliver user-focused solutions in IT operations and security.
 
       </p>
 
