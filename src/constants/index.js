@@ -167,7 +167,7 @@ const experiences = [
     company_name: "Arise (Reliance Home Comfort) · Remote",
     icon: creator,
     iconBg: "#383E56",
-    date: "June 2026 – Present",
+    date: "June 2026 – November 2026",
     points: [
       "Resolve customer inquiries, document interactions, and support issue resolution using CRM tools.",
     ],
